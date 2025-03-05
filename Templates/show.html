@@ -14,13 +14,13 @@
       <div class="card w-30 p-3 shadow-lg">
       <p class="text-primary">  {{ x.name }}</p>
       <p class="fw-bold "> <strong>Email:</strong> {{ x.email }}</p>
-      <p class="fw-bold "> <strong>phone:</strong> {{ x.email }}</p>
-      <p class="fw-bold "> <strong>Date and time:</strong> {{ x.email }}</p>
-          <p class="fw-bold "> <strong>Department</strong> {{ x.email }}</p>
-          <p class="fw-bold "> <strong>message</strong> {{ x.email }}</p>
-          <p class="fw-bold "> <strong>doctor</strong> {{ x.email }}</p>
+      <p class="fw-bold "> <strong>phone:</strong> {{ x.phone }}</p>
+      <p class="fw-bold "> <strong>Date and time:</strong> {{ x.date }}</p>
+          <p class="fw-bold "> <strong>Department</strong> {{ x.department }}</p>
+          <p class="fw-bold "> <strong>message</strong> {{ x.message }}</p>
+          <p class="fw-bold "> <strong>doctor</strong> {{ x.doctor }}</p>
       <p>
-          <a href="" class="text-warning">
+          <a href="{% url 'edit' x.id %}" class="text-warning">
               <i class="bi bi-pencil"></i>Edit
           </a>
 
